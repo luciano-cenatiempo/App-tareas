@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1 ">
+    <title>App Tareas</title>
+    <!-- FONT AWESOME ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <!-- MIS ESTILOS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- Cabecera y navegacion -->
+    <header>
+        <nav class="navbar navbar-dark bg-verde fixed-top">
+            <div class="container ">
+                <a class="navbar-brand">App Tareas</a>
+                <form class="d-flex">
+                    <input id="input-buscar" class="form-control me-2" type="search" placeholder="Buscar tarea"
+                        aria-label="Buscar tarea">
+                    <button id="btn-buscar" class="btn btn-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la app -->
+    <main>
+        <div class="container">
+            <div class="row contenido-principal">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <!-- tarjeta -->
+                    <div class="card text-white bg-dark mt-3 ">
+                        <div class="card-header bg-verde"><h4>Agrega una tarea</h4></div>
+                        <div class="tarjeta card-body bg-light">
+                            <form id="form_tarea">
+                                <input type="text" id="txt-titulo" class="form-control mb-3"
+                                    placeholder="Escriba el título">
+                                <textarea class="form-control mb-3" id="txt-detalle" rows="3"
+                                    placeholder="Escriba el detalle"></textarea>
+                                <button type="submit" id="btn-guardar" class="btn btn-primary w-100 mb-3">Guardar
+                                    Tarea</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="contenedor-tareas" class=" col-sm-12 col-md-6 col-lg-8 mb-3">
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <!-- MIS JS -->
+    <script src="js/codigo.js"></script>
+
+</body>
+
+</html>
