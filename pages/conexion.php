@@ -2,8 +2,8 @@
 
 $db_host="localhost";
 $db_nombre="task_db";
-$db_usuario="root";
-$db_clave="";
+$db_usuario="rootLjc";
+$db_clave="ljc010203";
 
 $conexion=mysqli_connect($db_host, $db_usuario, $db_clave);
 
