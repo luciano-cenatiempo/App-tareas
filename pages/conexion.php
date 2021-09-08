@@ -1,9 +1,9 @@
 <?php
 
 $db_host="localhost";
-$db_nombre="task_db";
-$db_usuario="rootLjc";
-$db_clave="ljc010203";
+$db_nombre="id17555056_task_db";
+$db_usuario="id17555056_rootljc";
+$db_clave="mQLGi5Y^wGs4F";
 
 $conexion=mysqli_connect($db_host, $db_usuario, $db_clave);
 
